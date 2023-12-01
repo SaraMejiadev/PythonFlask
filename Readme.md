@@ -25,9 +25,19 @@ A brief description of your project.
 - `POST /items`: Create a new item
 - `DELETE /items/<item_id>`: Delete an item by ID
 
-## Examples
+## Example Initial Data
 
-### Create a new item
+```python
+initial_cars = [
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2020,
+        "color": "Blue",
+        "image": "https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/camry/colors/blue_streak_metallic.jpg",
+        "electric": False,
+    },
+]
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"name": "New Item"}' http://localhost:5000/items
